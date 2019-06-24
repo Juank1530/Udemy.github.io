@@ -1,15 +1,90 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px. Es mejor utlizar REM para optimizar en las 
+    pantallas de los moviles **/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 /* Utiizar una fuente de google */
+
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
 /* Globales */
+
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem; /** =1200px **/
     margin: 0 auto;
 }
 
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Utilidades */
+
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.d-block{
+    display:block!important; 
+}
+
+/* Botones */
+
+.boton{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center; 
+}
+
+.boton-amarillo{
+    background-color: #e08709;  
+}
+
+.boton-verde{
+    background-color: #71b100;
+}
+
 /* Header */
+
 .site-header.inicio{
     /* background-image solo acepta imagenes */
     background-image: url(../img/header.jpg);
@@ -17,22 +92,37 @@ body{
     background-size: cover;
     /* 100vh toma el alto de la pantalla autamaticamente  */
     height: 100vh;
-    min-height: 600px;
+    min-height: 60rem; /** =600px **/
 } 
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.contenido-header h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
 
 .barra{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 3rem;
 }
 
 /* Clase navegacion */
+
 .navegacion a {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-    font-size: 18px;
-    margin-right: 20px; 
+    font-size: 1.8rem;
+    margin-right: 2rem; 
 }
 
 .navegacion a:hover{
@@ -42,3 +132,193 @@ body{
 .navegacion a:last-of-type{
     margin: 0;
 }
+
+/* Iconos Nosotros */
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3{
+    text-transform: uppercase;
+}
+
+/* Anuncios */
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anucio{
+    flex-basis: calc(33.3% - 1rem);
+    /* border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 1px; */
+    /* Border remplaza a los tres anteriores en un sola línea recibe el ancho, estilo y el color */
+    border: 1px solid #b5b5b5;
+    background: #f5f5f5;
+}
+
+.contenido-anuncio{
+/* 
+    padding-top:2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    El orden de los padding es el que esta en la parte superior
+     y se puede remplazar con la lía de abajo, y se solo se aplica padding de los mismo
+     en todas direcciones se usa padding: 2rem; */
+    padding: 2rem;
+}
+
+/* .contenido-anuncio h3{
+    margin: 0; 
+}
+
+.contenido-anuncio p{
+    margin: 0;
+} 
+Se pueden agrupar las clases, para aplicarles una propiedad*/
+.contenido-anuncio h3,
+.contenido-anuncio p{
+    margin: 0;
+}
+
+.precio{
+    color: #71b100;
+    font-weight: 700;
+}
+
+.iconos-carateristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconos-carateristicas li{
+    /* flex: 1; */
+    display: flex;     
+}
+
+.iconos-carateristicas li img{
+    margin-right: 2rem; 
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* Contacto Home */
+
+.imagen-contacto{
+    background-image: url(/Udemy/bienes_raices/img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center; 
+}
+
+.contenido-contacto{
+    flex: 1;
+    color: #ffffff;
+}
+
+.contenido-contacto{
+    font-size: 1.8rem;
+}
+
+/* Sección inferrior */
+
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales{   
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; 
+}
+
+.entrada-blog:last-of-type{
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada a {
+    color: black;
+    text-decoration: none;
+}
+
+.texto-entrada h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span{
+    color: #e08709;
+}
+
+/* Testimoniales */
+
+.testimonial{
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+
+.testimonial p{
+    text-align: right;
+}
+
+.testimonial blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;      
+}
+
