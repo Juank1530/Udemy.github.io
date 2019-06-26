@@ -220,7 +220,7 @@ Se pueden agrupar las clases, para aplicarles una propiedad*/
 /* Contacto Home */
 
 .imagen-contacto{
-    background-image: url(/Udemy/bienes_raices/img/encuentra.jpg);
+    background-image: url(../img/encuentra.jpg);
     background-position: center center;
     background-size: cover;
     height: 40rem;
@@ -322,3 +322,20 @@ Se pueden agrupar las clases, para aplicarles una propiedad*/
     font-weight: 300;      
 }
 
+/* Footer */
+
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    margin: 0;
+    color: #ffffff;
+}

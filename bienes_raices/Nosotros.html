@@ -1,12 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nosotros</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Nosotros</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/Styles.css">
 </head>
+
 <body>
+
+	<header class="site-header">
+
+		<div class="contenedor">
+			<div class="barra">
+
+				<!-- El logo siempre debe redireccionar al index del proyecto
+				(Página de inicio) -->
+				<a href="/Udemy/bienes_raices/index.html">
+					<img src="img/logo.svg" alt="Logotipo de bienes raices">
+				</a>
+
+				<!--No es recomendado utilizar <br> para saltos de línea,
+					* Es mejor utilizar <p>, no hay limite para usar etiquetas <p>-->
+
+				<!-- target="_blank" para abrir en una nueva vetana -->
+				<nav class="navegacion">
+					<a target="_blank" href="Nosotros.html">Nosotros</a>
+					<a href="Anuncios.html">Anuncios</a>
+					<a href="Blog.html">Blog</a>
+					<a href="Contacto.html">Contacto</a>
+				</nav>
+			</div>
+
+			<h1></h1>
+		</div>
+	</header>
+
+	<main class="contenedor">
+        <h1 class="fw-300 centrar-texto">Conoce Sobre Nosotros</h1>
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <img src="img/nosotros.jpg" alt="Imagen Nosotros">
+            </div>
+            <div class="texto-nosotros">
+                <blockquote>25 Años de Experiencia</blockquote>
+                <p>
+                    Ut sollicitudin dignissim blandit. 
+                    Quisque in mi eget dui vestibulum euismod vel sit amet urna. 
+                    Duis a dolor eget justo fringilla sodales et vel arcu. 
+                    Duis non dui nisi. Integer a vehicula urna. 
+                    Donec consectetur gravida nisi. 
+                    Ut laoreet, ex in cursus fringilla, nisl lectus viverra turpis, 
+                    sit amet cursus eros dui sed quam. Sed augue massa, 
+                    semper a posuere tristique, luctus sit amet est. 
+                    Sed tempor fringilla sapien, malesuada laoreet justo malesuada sed. 
+                    Nunc semper vulputate metus. 
+                    Ut ac neque scelerisque sem scelerisque blandit et vestibulum enim. 
+                    Aenean mollis erat augue, vitae lacinia libero tincidunt sed. 
+                    Fusce porttitor nec ipsum in faucibus. 
+                    Ut sit amet posuere eros, nec interdum lacus. 
+                    Cras vitae condimentum ligula. Suspendisse semper semper dui vitae lobortis.
+                </p>
+                <p>
+                    Proin quis varius felis, eget iaculis mi. 
+                    Praesent eleifend, lacus a tempus rutrum, ante massa bibendum purus, 
+                    a placerat justo mauris sit amet nisi. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                    Praesent a molestie urna. Integer vulputate consequat mi. 
+                    Vivamus sagittis varius quam aliquet commodo. 
+                    Fusce lacus velit, dignissim ut elit sit amet, hendrerit vulputate dolor. 
+                    Proin sodales sollicitudin leo, eget molestie ex egestas non. 
+                    Proin mi eros, faucibus ac volutpat in, vestibulum at risus. 
+                    Nullam pretium elit vitae sem dapibus tincidunt. Integer dignissim neque at mollis rhoncus.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section class="contenedor">
+            <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
+            <div class="iconos-nosotros">
     
+                <!-- width="600" height="100" propiedades que se pueden dar a las imagenes -->
+    
+                <div class="icono">
+                    <img src="img/icono1.svg" alt="Icono seguridad">
+                    <h3 class="encabezado uppercase">Seguridad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo mollitia quis id a nihil quos quae minus dolor,
+                        dicta tenetur labore tempora porro, perferendis,
+                        veniam eius nulla dolorum numquam qui!</p>
+                </div>
+    
+                <div class="icono">
+                    <img src="img/icono2.svg" alt="Icono Mejor Precio">
+                    <h3 class="encabezado">El Mejor Precio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo mollitia quis id a nihil quos quae minus dolor,
+                        dicta tenetur labore tempora porro, perferendis,
+                        veniam eius nulla dolorum numquam qui!</p>
+                </div>
+    
+                <div class="icono">
+                    <img src="img/icono3.svg" alt="Icono A Tiempo">
+                    <h3 class="encabezado">A Tiempo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo mollitia quis id a nihil quos quae minus dolor,
+                        dicta tenetur labore tempora porro, perferendis,
+                        veniam eius nulla dolorum numquam qui!</p>
+                </div>
+            </div>
+        </section>
+
+	<footer class="site-footer seccion">
+		<div class="contenedor contenedor-footer">
+			<nav class="navegacion">
+				<!-- target="_blank" para abrir en una nueva vetana -->
+				<a target="_blank" href="Nosotros.html">Nosotros</a>
+				<a href="Anuncios.html">Anuncios</a>
+				<a href="Blog.html">Blog</a>
+				<a href="Contacto.html">Contacto</a>
+			</nav>
+		<!-- !! Ojo ¡¡ a las entidades de HTML -->
+		<p class="copyright">Todos los derechos reservados <em>2019 &copy;</em></p>
+	</div>
+	</footer>
+
 </body>
+
 </html>
