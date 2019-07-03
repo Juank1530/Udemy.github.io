@@ -85,6 +85,11 @@ img{
 
 /* Header */
 
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
 .site-header.inicio{
     /* background-image solo acepta imagenes */
     background-image: url(../img/header.jpg);
@@ -154,16 +159,24 @@ img{
 .contenedor-anuncios{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /*Permite que lo que aparecia junto en seis se divida en tres*/
 }
 
 .anucio{
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
+    /* Toda la propiedad flex se comprime en la lìnea de arriba
+    *   flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(33.3% - 1rem);
+     */
+
     /* border-style: solid;
     border-color: #b5b5b5;
     border-width: 1px; */
     /* Border remplaza a los tres anteriores en un sola línea recibe el ancho, estilo y el color */
     border: 1px solid #b5b5b5;
     background: #f5f5f5;
+    margin-bottom: 2rem;
 }
 
 .contenido-anuncio{
@@ -338,4 +351,24 @@ Se pueden agrupar las clases, para aplicarles una propiedad*/
 .copyright{
     margin: 0;
     color: #ffffff;
+}
+
+/* Estilos Internos  */
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-column-gap: 2rem;
+    /* Es posible usar 1fr 1fr indica una fracción 
+    * también se puede usar repeat (2, 50%) genera dos columnas del 50 %
+    * Ó repeat (2, fr) 
+    *
+    */
+}
+
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
 }
