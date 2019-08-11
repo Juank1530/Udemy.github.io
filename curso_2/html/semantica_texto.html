@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semántica a nievel de texto</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        section {
+            height: 400px;
+            border: 1px solid grey;
+        }
+
+        span.mystyle {
+            background-color: teal;
+            color: white;
+            font-size: 25px;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Enlaces</h1>
+
+    <!-- target indica a donde se va a dirigir el enlace
+        targe=""; abre la pàgina en las pestaña actual
+        targe="blank"; abre una nueva pestaña -->
+    <!-- target mivalor es reutizable y el enlace que lo contenga tomará la pestaña que esté abierta -->
+    <a href="https://beziercode.com.co" target="">Enlace alguna WEB</a>
+    <a href="https://beziercode.com.co" target="mivalor">Bezier</a>
+    <a href="https://google.com" target="mivalor">Google</a>
+    <a href="/curso_2/otro.html" target="mivalor">Otro</a>
+
+    <!-- iframe abrir pàginas dentro de la pàgina atual parecido a utilizar JS para no recargar las paginas   -->
+    <!-- <iframe src="otro.html" frameborder="0" width="400" height="600"></iframe> -->
+
+    <!-- Es posible direcionarse lgun parte de la pàgina por medio de los ID de cada elemento -->
+    <ol>
+        <li><a href="#uno">Uno</a></li>
+        <li><a href="#dos">Dos</a></li>
+        <li><a href="#tres">Tres</a></li>
+        <li><a href="#cuatro">Cuatro</a></li>
+    </ol>
+
+    <section id="uno">
+        <h1>Uno</h1>
+    </section>
+    <section id="dos">
+        <h1>Dos</h1>
+    </section>
+    <section id="tres">
+        <h1>Tres</h1>
+    </section>
+    <section id="cuatro">
+        <h1>Cuatro</h1>
+    </section>
+
+    <ul>
+        <!-- href="mailto:" para activar la herramienta de gestiòn de correos y enviar un mail  -->
+        <a href="mailto: juan.tamara@farmalisto.com.co">Enviar un correo a juan.tamara@farmalisto.com.co</a>
+        <!-- href="tel:" para activar la herramienta de gestión de llamadas y llamar al número indicado  -->
+        <a href="tel: +573165006116">Llamar al +573165006116</a>
+        <!-- Opcinones para ver o descargar un PDF -->
+        <a href="/curso_2/pdf/Testing_Formato.pdf" target="_blank">Ver archivo PDF</a>
+        <a href="/curso_2/pdf/Testing_Formato.pdf" download>Descargar archivo PDF</a>
+        <!-- rel="" informaciòn semàntica de la pàgina  -->
+        <a href="https://beziercode.com.co" target="_blank" rel="alternate" hreflang="en">Enlace alguna WEB</a>
+        <a href="https://beziercode.com.co" target="blank" rel="author">Enlace para info del autor</a>
+        <a href="https://beziercode.com.co" target="blank" rel="help">Enlace ayuda sobre lo que se está viendo</a>
+        <a href="https://beziercode.com.co" target="blank" rel="next">Siguiente</a>
+        <a href="https://beziercode.com.co" target="blank" rel="nofolow">Se indica al buscador
+            que no indexe esa ruta</a>
+    </ul>
+
+    <!-- etiqueta <i> para poner en italic el texto que se contenga dentro de ella
+     etiqueta <b> para poner en negrita el texto que se contenga dentro de ella
+     etiqueta <u> para subrayar el texto que se contenga dentro de ella -->
+    <p>Llamó a su perro <b>Pluto</b> porue le recordo a los <i>dibujos animados</i> de su <u>infancia</u>.</p>
+    <p>
+        <!-- Etiqueta con carga semántica para poner en italic el texto -->
+        <em>Zombie ipsum reversus ab viral inferno, nam rick grimes malum</em>
+    </p>
+    <p>
+        <!-- Etiqueta con carga semántica para poner en negrita el texto -->
+        <strong>Zombie ipsum reversus ab viral inferno, nam rick grimes malum</strong>
+    </p>
+
+    <p>
+        <small>
+            Texto mas pequeño: Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+        </small>
+    </p>
+
+    <big>
+        texto más grande: Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+    </big>
+
+    <p>
+        Es posible mostrar segmentos de còdigo con la etiqueta CODE
+        <code>if (valor){/...}</code>
+    </p>
+
+    <p>
+        <article>Para incluir sub-indices se utiliza la etiqueta sub y para los super-indices se
+            utiliza sup
+        </article>
+        <b>Super-indice</b> Registrada<sup>®</sup><br>
+        <b>Sub-indice</b> CopyRight <sub>©</sub><br>
+        <b>2<sup>x</sup> </b><br>
+        <b>5<sup>3</sup></b>
+    </p>
+
+    <p>
+        <span class="mystyle">
+            Etiqueta CITE para hacer referencia a que es ina cita de algún autor,
+            contiene carga semántica y por lo tanto da información al navegador. <br>
+            <cite>JuanK</cite>
+        </span>
+    </p>
+
+    <p>
+        <span class="mystyle">Referencia</span> Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+    </p>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
