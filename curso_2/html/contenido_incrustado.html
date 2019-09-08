@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contenido inscrustado</title>
+</head>
+
+<body>
+    <h1>Contenido Inscrustado</h1>
+    <div>
+        <section>
+            <p>Imagen sin ningún cambio, solo la propiedad alt=""</p>
+            <img src="/curso_2/img/caballos.jpg" alt="Caballos_Galopando">
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <p>
+                Imagen ancho y alto fijo utilizando las propiedades height="" , width="" determinando el tamaño en
+                pixeles.
+            </p>
+            <img src="/curso_2/img/caballos.jpg" height="200" width="500" alt="Caballos_Galopando">
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <p>Esta es la etiqueta iframe que se utiliza para mostra PDF o información en la página, llamando el archivo
+                que puede estar en el poryecto o fuera de él, mediante el atrivuto src="".
+            </p>
+            <iframe src="../pdf/Testing_Formato.pdf" frameborder="0"></iframe>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <p>También se puede utilizar para mostrar otra página html, para definir el tamaño
+                se pueden utilzar las propiedades width="" height="", teniendo en cuenta que se debe 
+                eliminar la porpieda frameborder="". 
+            </p>
+                <iframe src="otro.html" width="500" height="500" ></iframe>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <p>Etiqueta embed para incrustar archivos flash .swf definiendolos con el atributo
+                type="application/x-shocwave-fash". <br>
+                para definir el tamaño
+                Se pueden utilzar las propiedades width="" height="" 
+            </p>
+            <embed src="Acá un archivo fash.swf, con su respectiva ruta" type="application/x-shocwave-fash">
+        </section>
+    </div>
+
+</body>
+
+</html>
