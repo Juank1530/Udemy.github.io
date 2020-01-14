@@ -12,7 +12,7 @@ $meses = array(
     'Septiembre',
     'Octubre',
     'Noviembre',
-    'Dieciembre'
+    'Diciembre'
 );
 
 $persona = array('Nombre'=>'Juank','Apellido'=>'Tamara','Edad'=>33);
@@ -25,7 +25,7 @@ $persona = array('Nombre'=>'Juank','Apellido'=>'Tamara','Edad'=>33);
 <head>
 <meta charset="UTF-8">
 <title>Ejercicio 24</title>
-<link rel="stylesheet" href="php_udemy/css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
