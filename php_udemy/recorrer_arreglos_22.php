@@ -1,5 +1,4 @@
 <?php
-
 $meses = array(
     'Enero',
     'Febrero',
@@ -30,20 +29,9 @@ $contador = 0;
 
 while ($contador < count($meses)) {
 
-
     $contador ++;
 
     ;
 }
 
-
-
-    
-    
-    
-    
-    
-    
-    
-    
 ?>

@@ -7,29 +7,26 @@
 </head>
 <body>
 
-    <h1>Funciones Varias</h1>
+	<h1>Funciones Varias</h1>
     
-    <?php 
-    
-    //Funciones nativas
+    <?php
+
+    // Funciones nativas
     count();
     sort();
     rsort();
     var_dump();
     print_r();
-    
-    //Funciones Propias
-    
-    function saludo() {
+
+    // Funciones Propias
+    function saludo()
+    {
         echo 'Saludo, esta es una función propia <br>';
     }
-    
+
     saludo();
     saludo();
-    
-    
-    
-    
+
     ?>
 
 

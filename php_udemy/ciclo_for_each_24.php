@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 $meses = array(
     'Enero',
     'Febrero',
@@ -15,8 +14,11 @@ $meses = array(
     'Diciembre'
 );
 
-$persona = array('Nombre'=>'Juank','Apellido'=>'Tamara','Edad'=>33);
-
+$persona = array(
+    'Nombre' => 'Juank',
+    'Apellido' => 'Tamara',
+    'Edad' => 33
+);
 
 ?>
 
@@ -36,17 +38,17 @@ $persona = array('Nombre'=>'Juank','Apellido'=>'Tamara','Edad'=>33);
 
 	<ul>
 		<?php
-            
-            foreach ($meses as $mes) {
-            echo '<li>' . $mes . '</li>';
-            }
-            
-            echo '<br>';
-            foreach ($persona as $datos => $valor) {
-            echo '<li>' . $datos . ' : ' . $valor . '</li>';
-            }
 
-        ?>
+foreach ($meses as $mes) {
+    echo '<li>' . $mes . '</li>';
+}
+
+echo '<br>';
+foreach ($persona as $datos => $valor) {
+    echo '<li>' . $datos . ' : ' . $valor . '</li>';
+}
+
+?>
 	</ul>
 
 </body>

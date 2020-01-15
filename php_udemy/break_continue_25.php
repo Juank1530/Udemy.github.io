@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 $paises = array(
     Colombia,
     Mexico,
@@ -7,18 +6,17 @@ $paises = array(
     España,
     Venezuela,
     Argentina,
-    USA    
+    USA
 );
 
 foreach ($paises as $pais) {
-    
+
     if ($pais == 'España') {
         break;
     }
-    echo $pais . '<br>';;
+    echo $pais . '<br>';
+    ;
 }
-
-
 
 ?>
 
@@ -35,21 +33,19 @@ foreach ($paises as $pais) {
 <body>
 
 	<h1>Paises latinoamericanos</h1>
-	
+
 	<p>Este es un for con la sentencia continue</p>
 
 		<?php
-           foreach ($paises as $pais) {
-               
-               if ($pais == 'España' || $pais == 'USA' || $pais == 'Mexico') {
-                   continue;
-                   
-               }
-               echo $pais . '<br>';
-           } 
-           
+foreach ($paises as $pais) {
 
-        ?>
+    if ($pais == 'España' || $pais == 'USA' || $pais == 'Mexico') {
+        continue;
+    }
+    echo $pais . '<br>';
+}
+
+?>
 
 </body>
 </html>
