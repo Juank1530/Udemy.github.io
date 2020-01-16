@@ -49,4 +49,6 @@ echo join(', ', $semana) . '<br>';
 $semana_reverse = array_reverse($semana);
 echo join(', ', $semana_reverse) . '<br>';
 
+
+
 ?>

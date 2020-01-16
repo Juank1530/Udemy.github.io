@@ -1,3 +1,4 @@
+
 <?php
 $page_ho = 'https://www.farmalisto.com.co/';
 $page_ca = 'https://www.farmalisto.com.co/2078-dermocosmetica';
@@ -31,5 +32,9 @@ echo '<br>' . 'TTFB Desktop ';
 print_r($ttbf_de_ho);
 echo '<br>' . 'TTFBDV ';
 print_r($ttbfdv_de_ho);
+
+
+
+
 
 ?>
