@@ -21,9 +21,10 @@ echo $_POST['name'];
 
 <h1>Datos desde formularios</h1>
 
-<!--<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>
-    Esta es la forma correcta y segura de hacer un llamado a la misma página 
-    para trbajar con los datos 
+<!--
+<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>
+Esta es la forma correcta y segura de hacer un llamado a la misma página 
+para trbajar con los datos 
 
 -->
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
