@@ -1,6 +1,7 @@
 <?php
 
 //Esta es una clase que se puede definir como una plantilla con propiedades y métodos
+//Usar mayuscula para definirla
 class persona {
     //Estos las propiedades
      public $nombre;
@@ -21,7 +22,7 @@ $juank->edad = 34;
 $juank->pais = 'Colombia';
 
 $juank->show_info();
-// echo $juank->nombre . '<br>';
+ // echo $juank->nombre . '<br>';
 // echo $juank->edad . '<br>';
 // echo $juank->pais . '<br>';
 
