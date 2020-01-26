@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<< HEAD
 
 
+=======
+$mysqli = mysqli_connect("localhost", "root", "", "test");
+>>>>>>> master
 
 
 
