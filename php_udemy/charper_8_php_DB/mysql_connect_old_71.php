@@ -1,8 +1,6 @@
 <?php
 
-
-
-$mysqli = mysqli_connect("localhost", "Juank1530", "JuanK1530", "udemy");
+$mysqli = mysqli_connect("localhost", "root", "", "test");
 
 print_r($mysqli);
 
