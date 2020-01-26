@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SQL</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<h1>Temas básicos de SQl</h1>
+
+
+	CREATE DATABASE + nombre de la base a crear; Para crear bases de datos
+	<br>
+
+	<pre>
+		<code>
+			SHOW DATABASES;
+		</code>
+		</pre>
+	Para ver la bases de datos que existen
+	<br> Crear la tabla con el nombre y los campos además de las
+	caracteristicas de dichos campos.
+	<br>
+
+	<pre>
+		<code>
+		CREATE TABLE test (
+			id INT AUTO_INCREMENT, # nombre del campo, tipo y auto incremento
+			nombre VARCHAR (100) NOT NULL, # nombre del campo, tipo, longitud y obligatorieda
+			mail VARCHAR NOT NULL, # nombre del campo, tipo, longitud y obligatorieda
+			PRIMARY KEY (id)  #campo que va a ser la llave primaria
+		);
+		</code>
+		</pre>
+
+
+	DESCRIBE + nombre de la tabla # Ver las columnas y descrición de las
+	tablas
+	<br>
+
+	<pre>
+		<code>
+		DESCRIBE users;
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		SELECT * FROM users;
+		</code>
+		</pre>
+
+
+	INSERT INTO + nombre de la tabla VALUES(los valores a ingresar en el
+	orden de la tabla);
+	<br> Cuando hay un campo marcado como AUTO_INCREMENT se debe
+	ingresar como NULL para que él solo tomé el valor
+	<br>
+
+	<pre>
+		<code>
+		INSERT INTO users
+		VALUES
+			(
+				NULL,
+				'anastacio',
+				'anastacio@gmail.com'
+			);
+		
+		</code>
+		</pre>
+
+	En caso de solo querer ingresar datos a ciertos campos de la tabla
+	utilizamos el siguiente comando
+	<br> INSERT INTO nombre de la tabla (campos a llenar separados por
+	comas) VALUES (valores de los campos separados por comas);
+	<br>
+
+	<pre>
+		<code>
+		INSERT INTO users (id, mail)
+		VALUES
+			(NULL, 'test@test.com'),
+		    (NULL, 'test_dos@test.com')
+		;
+		</code>
+		</pre>
+
+	Para actuzalizar los valores de la tablas se usa en comando UPDATE
+	<br> UPDATE nombre de la tabla SET nombre del campo a modificar =
+	nuevo valor WHERE campo identificador = valor del campo identificador
+	<br>
+	<pre>
+		<code>
+		UPDATE users SET name='Anastacio' where id = 7; 
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		UPDATE users SET name='Carlos' where id = 5;
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		UPDATE users SET mail='maniatik@gmail.com' where id = 2;
+		</code>
+		</pre>
+
+	consultas de un solo campo o campos especificos
+	<br> SELECT nombre o nombres de los campos FROM tabla a consultar;
+	<pre>
+		<code>
+		SELECT name FROM users;
+		</code>
+		</pre>
+
+	El WHERE es una buena opción para buscar en base a un campo
+	<br>
+	<pre>
+		<code>
+		SELECT name FROM users where `name`= 'Juank';
+		</code>
+		</pre>
+
+	LIKE es simular al WHERE pero tiene más funcinalidades
+	<br> En este ejemplo busca todo lo que empieza por A
+	<br>
+	<pre>
+		<code>
+		SELECT * FROM users WHERE `name` LIKE 'c%';
+		</code>
+		</pre>
+
+	En este ejemplo busca todo lo que termina en k el signo % indica todo
+	lo que este adelante o atrás de él
+	<br>
+	<pre>
+		<code>
+		SELECT * FROM users WHERE `name` LIKE '%k';
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		SELECT * FROM users WHERE mail LIKE '%.co%';
+		</code>
+		</pre>
+
+	ORDER BY sirve para ordenar segun un campo y ASC y DESC pueden estar
+	unidos a el
+	<br>
+
+	<pre>
+		<code>
+		SELECT * FROM users ORDER BY `name` ASC;
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		SELECT * FROM users ORDER BY `name` DESC;
+		</code>
+		</pre>
+
+	El comado LIMIT sirve para indicar que no traiga todos los resultados
+	si no los que se indiquen despues del comando
+	<br> LIMIT con estos parámetros indica un rago LIMIT 0, 2 indica
+	que traiga dos valores despues del primer registro
+	<br>
+
+	<pre>
+		<code>
+		SELECT * FROM users LIMIT 0, 3;
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		SELECT * FROM users;
+		</code>
+		</pre>
+
+	DELETE es la palabra reservada para eliminar registros se indica la
+	tabla y el WHERE para especificar que se va a borrar;
+	<br>
+
+	<pre>
+		<code>
+		DELETE FROM users WHERE id = 6;
+		</code>
+		</pre>
+
+	<pre>
+		<code>
+		INSERT INTO users (id, name, mail)
+		VALUES
+			(NULL, 'Nana', 'nana@gmail.com'),
+		  (NULL, 'Sergio', 'sergio@yahoo.com'),
+		  (NULL, 'Diego', 'diego@farmalisto.com'),
+		  (NULL, 'Julio', 'julio@hotmail.com') 
+		;
+		</code>
+		</pre>
+</body>
+</html>
