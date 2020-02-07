@@ -1,13 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-
-
-=======
-$mysqli = mysqli_connect("localhost", "root", "", "test");
->>>>>>> master
-
-
 
 $con = mysqli_connect( "localhost" , "Juank" , "" , "test");
 
