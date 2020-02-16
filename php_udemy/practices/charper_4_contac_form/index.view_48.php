@@ -5,7 +5,6 @@
 <title>Formulario de contacto</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type='text/css'>
 <link rel="stylesheet" href="../../css/styles_48.css">
-
 </head>
 <body>
 
