@@ -13,9 +13,11 @@
 
     <div class="contenedor">
         <h1>Árticulos</h1>
+
         <section class="articulos">
             <!--Ejemlpos de emmet ul#nav>li.item$*4>a{Item$} -->
             <!-- ul>li$*4{$ - Lorem ipsum dolor sit amet consectetur.} -->
+            <!-- Acá se listan las opciones de la bbdd ejecuntado un ciclo -->
             <ul>
                 <?php foreach ($articulos as $articulo) : ?>
                     <li><?php echo $articulo['id'] . '.- ' . $articulo['articulo'] ?></li>
@@ -24,26 +26,33 @@
             </ul>
         </section>
 
+        <!-- Establecemos cuando el botón "Siguiente" estará habilitado  -->
         <!-- secticon.paginacion>ul>li>a*4{$} -->
         <secticon class="paginacion">
             <ul>
-                <?php if($pagina == 1): ?>
+                <?php if ($pagina == 1) : ?>
                     <li class="disabled">&laquo;</li>
-                <?php else: ?>
+                <?php else : ?>
+                    <li><a href="?pagina= <?php echo $pagina - 1 ?>">&laquo;</a></li>
                 <?php endif; ?>
-                
-                	<?php if(pagina == 1): ?>
-                    <?php else: ?>
-                    <?php endif; ?>
-                
 
-                    
-                <!-- 
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">&raquo;</a></li> -->
+                <!-- Ejecutamos un cliclo para mostrar las páginas -->
+                <?php
+
+                for ($i = 1; $i <= $numeroPaginas; $i++) {
+                    if ($pagina == $i) {
+                        echo "<li class='active'><a href='?pagina=$i'>$i</a></li>";
+                    } else {
+                        echo "<li><a href='?pagina=$i'>$i</a></li>";
+                    }
+                }
+                ?>
+                <!-- Establecemos cuando el botón "Anterior" estará habilitado  -->
+                <?php if ($pagina == $numeroPaginas) : ?>
+                    <li class="disabled">&raquo;</li>
+                <?php else : ?>
+                    <li><a href="?pagina= <?php echo $pagina + 1 ?>">&raquo;</li>
+                <?php endif; ?>
             </ul>
         </secticon>
     </div>
