@@ -6,30 +6,21 @@
     box-sizing: border-box;
 }
 
-
-/* Color y tamaño a la fuente, Color de bondo a la página */
-
 body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    background: #1b1d35;
-    color: #ffffff;
+    background: #1B1D35;
+    color: #fff;
 }
-
-
-/* Color y decoración al enlace  */
 
 a {
     text-decoration: none;
-    color: #b8711b;
+    color: #B8711B;
 }
 
 a:hover {
     text-decoration: underline;
 }
-
-
-/* Posisión y tamaño del div inicial */
 
 .contenedor {
     max-width: 500px;
@@ -37,12 +28,9 @@ a:hover {
     margin: auto;
 }
 
-
-/* Posisión, tamaño y color del título */
-
 .titulo {
     font-weight: 300;
-    color: #b8711b;
+    color: #B8711B;
     text-align: center;
     margin: 60px 0 30px 0;
 }
@@ -50,19 +38,24 @@ a:hover {
 .border {
     border: none;
     margin-bottom: 5px;
-    border-top: 10px solid #b8711b;
+    border-top: 10px solid #B8711B;
     background: none;
     color: none;
 }
 
 .formulario {
-    background: #2c2c47;
+    background: #2C2C47;
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.formulario input [type="text"],
-.formulario input [type="password"] {
+.formulario .form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
     padding: 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -77,15 +70,16 @@ a:hover {
     width: 48px;
     max-height: 48px;
     font-size: 18px;
+    line-height: 18px;
     background: #c8c8c8;
     display: inline-block;
-    color: #6c6c6c;
+    color: #6b6b6b;
     vertical-align: top;
 }
 
-.formulario .icono .izquierda {
+.formulario .icono.izquierda {
     margin-right: 4px;
-    -webkit-boder-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
     -moz-border-radius: 3px 0 0 3px;
     -ms-border-radius: 3px 0 0 3px;
     -o-border-radius: 3px 0 0 3px;
@@ -95,6 +89,7 @@ a:hover {
 .formulario .usuario,
 .formulario .password {
     width: calc(100% - 52px);
+    height: 48px;
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     -ms-border-radius: 0 3px 3px 0;
@@ -104,6 +99,7 @@ a:hover {
 
 .formulario .password_btn {
     width: calc(100% - 105px);
+    height: 48px;
 }
 
 .formulario .error ul {
