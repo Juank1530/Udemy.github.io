@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway+Dots|Roboto:300i,400&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Crea un Cuenta</title>
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
 
     <div class="contenedor">
-        <h1 class="titulo">Regístrate</h1>
+        <h1 class="titulo">Iniciar sesión</h1>
         <hr class="border">
 
         <form class="formulario" name="login" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
@@ -23,28 +23,14 @@
             </div>
 
             <div class="form-group">
-                <i class="icono izquierda fa fa-lock"></i><input type="password" name="password" class="password" placeholder="Contraseña">
-            </div>
-
-            <div class="form-group">
-                <i class="icono izquierda fa fa-lock"></i><input type="password" name="password2" class="password_btn" placeholder="Repetir Contraseña">
+                <i class="icono izquierda fa fa-lock"></i><input type="password" name="password" class="password_btn" placeholder="Contraseña">
                 <i class="submit-btn fa fa-arrow-right" onclick="login.submit()"></i>
             </div>
-
-            <!-- Acá se muestra el error en caso de que los datos no esten completos -->
-            <?php if(!empty($errores)): ?>
-               <div class="error">
-                   <ul>
-                       <?php echo $errores;?>
-                   </ul>
-               </div> 
-            <?php endif; ?>
-            
         </form>
 
         <p class="texto-registrate">
-            ¿ Ya tienes cuenta ?
-            <a href="login_87.php">Iniciar Sesión</a>
+            ¿ Aun tienes cuenta ?
+            <a href="registrate_83.php">Registrate</a>
         </p>
 
     </div>

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway+Dots|Roboto:300i,400&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Contenido</title>
 </head>
 
