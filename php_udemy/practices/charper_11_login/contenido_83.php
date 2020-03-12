@@ -1,6 +1,11 @@
-<?php 
+<?php session_start();
 
-require_once "views/contenido.view_83.php";
+if (isset($_SESSION['usuario'])) {
+    require "views/contenido.view_83.php";
+} else {
+    header('Location: login_87.php');
+}
+
  
 
 

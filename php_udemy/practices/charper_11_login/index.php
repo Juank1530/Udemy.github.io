@@ -1,7 +1,6 @@
-<?php 
-
+<?php session_start();
 // Acá se indica que vamos a trabajar con sesiones 
-session_start();
+
 
 // Se valida si la sesión está iniciada y si no lo está se envía a la página de resgistro 
 if (isset($_SESSION['usuario'])) {
