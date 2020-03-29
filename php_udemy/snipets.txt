@@ -1,0 +1,227 @@
+**************** start php snipets *********************
+
+{
+    // Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // },
+
+    "snippetName": {
+        "prefix": "prefix",
+        "body": [
+            "snippet",
+        ],
+        "description": "description"
+    },
+
+    "tag_pre": {
+        "prefix": "pre",
+        "body": [
+            "echo '<pre>';\r",
+            "print_r($$1);\r",
+            "echo '<pre/>';\r",
+        ],
+        "description": "Tag pre"
+    },
+
+    "conection": {
+        "prefix": "conect",
+        "body": [
+            "$$conection = new PDO('mysql:host=localhost;dbname=udemy', 'juank', '');",
+        ],
+        "description": "BBDD conect"
+    },
+
+    "var": {
+        "prefix": "$",
+        "body": [
+            "$$1 = $2;",
+        ],
+        "description": "Variable"
+    },
+
+    "file_ddbb": {
+        "prefix": "ddbb",
+        "body": [
+            "$$db_host='$1';\r",
+            "$$db_nombre='$2';\r",
+            "$$db_usuario='$3';\r",
+            "$$db_password='$4';\r",
+        ],
+        "description": "Data to conect"
+    },
+
+    "Trycatch": {
+        "prefix": "tryerror",
+        "body": [
+            "try {",
+            "\t$$conexion = new PDO('mysql:host=localhost;dbname=udemy','juank','');",
+            "}catch (PDOException $$e) {",
+            "\techo 'Error: ' . $$e->getMessage();",
+            "}$1",
+        ],
+        "description": "TRry catch sentence"
+    },
+
+    "incluide": {
+        "prefix": "mysqliconect",
+        "body": [
+            "require 'conect.php';\r",
+            "$$conetion=mysqli_connect($$db_host,$$db_usuario,$$db_password);\r\r",
+            "if (mysqli_connect_errno()) {\r",
+            "\techo ':(';//Fallo al conectar la BBDD\r",
+            "\texit();\r",
+            "}else{\r\r",
+            "\tmysqli_select_db($$conetion, $$db_nombre) or die (':(');//Fallo al conectar la BBDD\r",
+            "\tmysqli_set_charset($$conetion, \"utf8\");\r\r",
+            "\t$1//Your code here..\r\r",
+            "\tmysqli_close($$conetion);\r",
+            "}\r"
+        ],
+        "description": "conection Mysqli"
+    },
+
+    "var_dum": {
+        "prefix": "dump",
+        "body": [
+            "echo '<pre>';\r",
+            "var_dump($$1);\r",
+            "echo '<pre/>';\r",
+        ],
+        "description": "description"
+    },
+
+    "prepare_statement": {
+        "prefix": "prepare_statement",
+        "body": [
+            "$$statement = $$conexion->prepare('$1');\r",
+        ],
+        "description": "description"
+    },
+
+    "execute_statement": {
+        "prefix": "execute_statement",
+        "body": [
+            "$$statement -> execute(array(':$1' => $$_$2['$3']$4));\r",
+        ],
+        "description": "description"
+    },
+
+        "Header_location": {
+        "prefix": "header_location",
+        "body": [
+            "header('Location: $1');\r",
+        ],
+        "description": "description"
+    },
+
+
+
+
+
+}
+
+
+
+**************** end php snipets *********************
+
+
+**************** start html snipets *********************
+
+{
+    // Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+
+    "snippetName": {
+        "prefix": "prefix",
+        "body": [
+            "snippet",
+        ],
+        "description": "description"
+    },
+
+    "foreach": {
+        "prefix": "foreach",
+        "body": [
+            "<?php foreach ($$1variable as $$2key => $$3value):\r ?>",
+            "<?php $4# code...\r ?>",
+            "<?php endforeach;\r ?>",
+        ],
+        "description": "description"
+    },
+
+    "php": {
+        "prefix": "php",
+        "body": [
+            "<?php\r ",
+            "$1 \r\r\r\r",
+            "?>",
+        ],
+        "description": "description"
+    },
+
+
+    "1php": {
+        "prefix": "1php",
+        "body": [
+            "<?php $1?>",
+        ],
+        "description": "description"
+    },
+
+    "if": {
+        "prefix": "ifhtml",
+        "body": [
+            "<?php if($$1 ): ?>\r",
+
+            "<?php endif ?>",
+        ],
+        "description": "description"
+    },
+
+    "elseif": {
+        "prefix": "elseif",
+        "body": [
+            "<?php if($pagina == 1): ?>\r",
+            "<?php else: ?>\r",
+            "<?php endif; ?>\r",
+        ],
+        "description": "description"
+    },
+
+            "for_each": {
+        "prefix": "for_each",
+        "body": [
+            "<?php foreach($1):?>\r",
+            "\t$2\r",
+            "<?php endforeach;?>\r",
+        ],
+        "description": "description"
+    },
+
+
+
+}
+
+
+**************** end html snipets *********************

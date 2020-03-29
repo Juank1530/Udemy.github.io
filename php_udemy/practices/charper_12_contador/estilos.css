@@ -1,0 +1,57 @@
+/* Reiniciar los estilos de la página */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Color y fuente de la letra */
+
+body {
+    background: #e8eef2;
+    font-family: "Oswald";
+}
+
+
+/* Estilos del cuadro  */
+
+.visitantes {
+    background: #bb1f35;
+    width: 200px;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+/* Estilos del título */
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    margin: 30px 0;
+    color: #0d2c44;
+}
+
+
+/* Color de la letra, ubicación y color */
+
+.visitantes .numero {
+    font-weight: normal;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+
+/* Color de la letra, ubicación y color */
+
+.visitantes .texto {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 30px;
+}
