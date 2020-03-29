@@ -31,11 +31,11 @@
 
             <div class="paginacion">
                 <?php if ($pagina_actual > 1) : ?>
-                    <a href="index.php?p=<?php $pagina_actual - 1; ?>" class="izquierda"><i class="fa fa-long-arrow-left"></i> Página Anterior</a>
+                    <a href="index.php?p=<?php echo $pagina_actual - 1; ?>" class="izquierda"><i class="fa fa-long-arrow-left"></i> Página Anterior</a>
                 <?php endif ?>
 
                 <?php if ($total_paginas != $pagina_actual) : ?>
-                    <a href="index.php?p=<?php $pagina_actual + 1; ?>" class="derecha">Página Siguiente <i class="fa fa-long-arrow-right"></i></a>
+                    <a href="index.php?p=<?php echo $pagina_actual + 1; ?>" class="derecha">Página Siguiente <i class="fa fa-long-arrow-right"></i></a>
                 <?php endif ?>
             </div>
         </div>
