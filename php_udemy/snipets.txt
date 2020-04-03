@@ -225,3 +225,31 @@
 
 
 **************** end html snipets *********************
+
+
+Plugins************************************************
+
+mcright.auto-save
+alefragnani.bookmarks
+wcwhitehead.bootstrap-3-snippets
+zaczero.bootstrap-v4-snippets
+coenraads.bracket-pair-colorizer
+msjsdiag.debugger-for-chrome
+abusaidm.html-snippets
+zignd.html-css-class-completion
+xabikos.javascriptsnippets
+lonefy.vscode-js-css-html-formatter
+ritwickdey.liveserver
+angelgonzalez.loremzombie
+jmrog.vscode-nuget-package-manager
+felixfbecker.php-debug
+bmewburn.vscode-intelephense-client
+felixfbecker.php-intellisense
+hvyindustries.crane
+ikappas.phpcs
+ms-python.python
+zhangciwu.swig-tpl
+vscode-icons-team.vscode-icons
+update 02/0420
+
+
