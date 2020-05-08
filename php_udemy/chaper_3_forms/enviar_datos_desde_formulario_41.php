@@ -10,7 +10,7 @@
 
 <h1>Datos desde formularios</h1>
 
-<form action="recibe_post_42" method="post">
+<form action="recibe_post_42.php" method="post">
 
 	<input type="text" placeholder="Nombre:" name="name">
 	<br>

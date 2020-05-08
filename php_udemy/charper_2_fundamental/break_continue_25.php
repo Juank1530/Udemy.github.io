@@ -1,4 +1,5 @@
 <?php
+
 $paises = array(
     Colombia,
     Mexico,

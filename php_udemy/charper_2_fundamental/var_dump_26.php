@@ -44,7 +44,7 @@
     echo 'También sirve para imprimir el valor de una variable Boleana <br>';
     echo var_dump($boleano);
 
-    var
+
     
     
     ?>
