@@ -290,12 +290,50 @@ footer ul.redes li a {
     .columna-mobile-100 {
         width: 100%;
     }
+    .enlace-logo {
+        position: relative;
+        z-index: 3;
+    }
+    header.open {
+        position: fixed;
+        background-color: #ffffff;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
     header .container .hambur {
         display: block;
         font-size: 40px;
+        /* position: relative; */
+        z-index: 3;
+    }
+    header .container .hambur.open i::before {
+        content: "\f00d";
     }
     header .container nav {
         display: none;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 125px 15px;
+        transform: translateX(100%);
+        transition: all .6s ease-out;
+    }
+    header .container nav.open {
+        transform: translateX(0%);
+    }
+    header .container nav a {
+        font-size: 25px;
+        margin-bottom: 15px;
     }
     .section {
         padding-top: 30px;
