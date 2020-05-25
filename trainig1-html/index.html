@@ -6,47 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Coca Cola es una gaseosa muy rica pero muy mala" />
     <meta name="keywords" content="bebida,gaseosa,azucar" />
+    <link rel="short icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bienvenidos a Coca Cola</title>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="container">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="" /></a>
             <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#ubicacion">Ubicación</a>
-                <a href="#galeria">Galeria</a>
+                <a href="#inicio">INICIO</a>
+                <a href="#nosotros">NOSOTROS</a>
+                <a href="#servicios">SERVCICOS</a>
+                <a href="#ubicacion">UBICACIÓN</a>
+                <a href="#galeria">GALERIA</a>
             </nav>
+            <!-- Este es el menú hamburgesa -->
+            <a href="#" class="hambur"><i class="fas fa-bars"></i></a>
         </div>
-        <a href="index.html"><img src="img/logo.jpg" alt="" /></a>
     </header>
     <main>
         <section id="inicio">
-            <img src="img/bannerprincipal.jpg" alt="">
-            <div>
+            <img src="img/banner-principal.jpg" alt="">
+            <div class="bloque-banner">
                 <h1>Muchos años contigo</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere, voluptate sint quasi quidem iusto autem debitis ut eum ad itaque neque nisi voluptatem nulla dicta, esse voluptates consectetur id!</p>
-                <a href="#nosotros">Ver más</a>
+                <a href="#nosotros" class="boton boton-blanco">Ver más</a>
             </div>
         </section>
-        <section id="nosotros">
-            <div>
+        <section id="nosotros" class="section">
+            <div class="container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque facilis ab officia nulla autem deleniti, illo saepe necessitatibus debitis laborum vero odit maiores error est rerum expedita commodi enim cum esse vel. Sed ut aliquid dolor
                     minus magnam vel quis quasi, eius iste illo maxime fugiat dolores rem necessitatibus ea.</p>
             </div>
         </section>
-        <section id="servicios">
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <img src="img/servcio1.jpg" alt="">
+        <section id="servicios" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="columna columna-33 columna-mobile-100">
+                        <div class="bloque-servcio">
+                            <div class="bloque-img-servcio">
+                                <img src="img/servicio1.jpg" alt="">
                             </div>
-                            <div>
-                                <h2>Servcio 1</h2>
+                            <div class="bloque-contenido-servcio">
+                                <h2>Servicio 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, praesentium reiciendis consectetur error nam officia molestias adipisci sit distinctio fuga exercitationem quidem tempora veniam reprehenderit. Voluptatem iure
+                                    ullam nobis accusantium necessitatibus nemo odit architecto, ut veritatis? Impedit, quisquam voluptate, ducimus sequi eum itaque doloribus tempore ab possimus tempora, porro id!</p>
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columna columna-33 columna-mobile-100">
+                        <div class="bloque-servcio">
+                            <div class="bloque-img-servcio">
+                                <img src="img/servicio2.jpg" alt="">
+                            </div>
+                            <div class="bloque-contenido-servcio">
+                                <h2>Servicio 2</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, praesentium reiciendis consectetur error nam officia molestias adipisci sit distinctio fuga exercitationem quidem tempora veniam reprehenderit. Voluptatem iure
                                     ullam nobis accusantium necessitatibus nemo odit architecto, ut veritatis? Impedit, quisquam voluptate, ducimus sequi eum itaque doloribus tempore ab possimus tempora, porro id!</p>
                                 <a href="#">Ver más</a>
@@ -54,123 +75,92 @@
 
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <div>
-                                <img src="img/servcio2.jpg" alt="">
+                    <div class="columna columna-33 columna-mobile-100">
+                        <div class="bloque-servcio">
+                            <div class="bloque-img-servcio">
+                                <img src="img/servicio3.jpg" alt="">
                             </div>
-                            <div>
-                                <h2>Servcio 2</h2>
+                            <div class="bloque-contenido-servcio">
+                                <h2>Servicio 3</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, praesentium reiciendis consectetur error nam officia molestias adipisci sit distinctio fuga exercitationem quidem tempora veniam reprehenderit. Voluptatem iure
                                     ullam nobis accusantium necessitatibus nemo odit architecto, ut veritatis? Impedit, quisquam voluptate, ducimus sequi eum itaque doloribus tempore ab possimus tempora, porro id!</p>
                                 <a href="#">Ver más</a>
                             </div>
-
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <img src="img/servcio3.jpg" alt="">
-                            </div>
-                            <div>
-                                <h2>Servcio 3</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, praesentium reiciendis consectetur error nam officia molestias adipisci sit distinctio fuga exercitationem quidem tempora veniam reprehenderit. Voluptatem iure
-                                    ullam nobis accusantium necessitatibus nemo odit architecto, ut veritatis? Impedit, quisquam voluptate, ducimus sequi eum itaque doloribus tempore ab possimus tempora, porro id!</p>
-                                <a href="#">Ver más</a>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="galeria">
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="img/galeria1.jpg" alt="">
-                            <h3>Foto 1</h3>
-                        </div>
+        <section id="galeria" class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="columna columna-33 cuadrado-perfecto columna-mobile-100">
+                        <img src="img/galeria1.jpg" alt="">
+                        <h3>Foto 1</h3>
                     </div>
-                    <div>
-                        <div>
-                            <img src="img/galeria2.jpg" alt="">
-                            <h3>Foto 2</h3>
-                        </div>
+                    <div class="columna columna-33 cuadrado-perfecto columna-mobile-100">
+                        <img src="img/galeria2.jpg" alt="">
+                        <h3>Foto 2</h3>
                     </div>
-                    <div>
-                        <div>
-                            <img src="img/galeria3.jpg" alt="">
-                            <h3>Foto 3</h3>
-                        </div>
+                    <div class="columna columna-33 cuadrado-perfecto columna-mobile-100">
+                        <img src="img/galeria3.jpg" alt="">
+                        <h3>Foto 3</h3>
                     </div>
-                    <div>
-                        <div>
-                            <img src="img/galeria4.jpg" alt="">
-                            <h3>Foto 4</h3>
-                        </div>
+                    <div class="columna columna-33 cuadrado-perfecto columna-mobile-100">
+                        <img src="img/galeria4.jpeg" alt="">
+                        <h3>Foto 4</h3>
                     </div>
-                    <div>
-                        <div>
-                            <img src="img/galeria5.jpg" alt="">
-                            <h3>Foto 5</h3>
-                        </div>
+                    <div class="columna columna-33 cuadrado-perfecto columna-mobile-100">
+                        <img src="img/galeria5.jpg" alt="">
+                        <h3>Foto 5</h3>
                     </div>
-                    <div>
-                        <div>
-                            <img src="img/galeria6.jpg" alt="">
-                            <h3>Foto 6</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="img/galeria7.jpg" alt="">
-                            <h3>Foto 7</h3>
-                        </div>
+                    <div class="columna columna-33 cuadrado-perfecto columna-mobile-100">
+                        <img src="img/galeria6.jpg" alt="">
+                        <h3>Foto 6</h3>
                     </div>
                 </div>
-
             </div>
         </section>
-        <section id="ubicacion">
+        <section id="ubicacion" class="section">
             <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </section>
-        <footer>
-            <div>
-                <div>
-                    <img src="img/logo2.jpg" alt="">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, eveniet?</p>
-                </div>
-                <div>
-                    <h3>Temas relacionados</h3>
-                    <ul>
-                        <li><a href="#">enlace1</a></li>
-                        <li><a href="#">enlace2</a></li>
-                        <li><a href="#">enlace3</a></li>
-                        <li><a href="#">enlace4</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Temas relacionados 2</h3>
-                    <ul>
-                        <li><a href="#">enlace1</a></li>
-                        <li><a href="#">enlace2</a></li>
-                        <li><a href="#">enlace3</a></li>
-                        <li><a href="#">enlace4</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#"><i></i></a></li>
-                        <li><a href="#"><i></i></a></li>
-                        <li><a href="#"><i></i></a></li>
-                    </ul>
+        <footer class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="columna columna-25 columna-mobile-100">
+                        <img src="img/logo-blanco.png" class="logo-pie">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, eveniet?</p>
+                    </div>
+                    <div class="columna columna-25 columna-mobile-100">
+                        <h3>Temas relacionados</h3>
+                        <ul>
+                            <li><a href="#">enlace1</a></li>
+                            <li><a href="#">enlace2</a></li>
+                            <li><a href="#">enlace3</a></li>
+                            <li><a href="#">enlace4</a></li>
+                        </ul>
+                    </div>
+                    <div class="columna columna-25 columna-mobile-100">
+                        <h3>Temas relacionados 2</h3>
+                        <ul>
+                            <li><a href="#">enlace1</a></li>
+                            <li><a href="#">enlace2</a></li>
+                            <li><a href="#">enlace3</a></li>
+                            <li><a href="#">enlace4</a></li>
+                        </ul>
+                    </div>
+                    <div class="columna columna-25 columna-mobile-100">
+                        <h3>Encuentranos en: </h3>
+                        <ul class="redes">
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="pie">
+                <div class="container">
                     &copy; 2020 - Todos los Derechos reservados
                 </div>
             </div>
