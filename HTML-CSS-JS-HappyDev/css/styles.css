@@ -1,0 +1,193 @@
+/* Esta propiedad se usa para que respete el acnho que se define y el padding funcione bien */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Esta propiedad controla la fuente de google fonts */
+    font-family: 'Arvo', serif;
+    color: #0a0900;
+}
+
+a {
+    /* Se utiliza para hacer reubicaciones o trasformaciones de los elementos */
+    display: inline-block;
+}
+
+section {
+    position: relative;
+}
+
+
+/* Todas las etiquetas a que estén dentro del nav aplique estas propiedades */
+
+nav a {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.cabecera {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: #fae15e; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.cabecera .link-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cabecera .link-logo .logo {
+    width: 60px;
+    height: auto;
+}
+
+.cabecera .menu {
+    display: inline-block;
+    margin-left: 63%;
+}
+
+.cabecera .menu a {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+
+/* Este es el contenerdor principal y define la vista de la página */
+
+.container {
+    /* Ancho del contenerdor */
+    width: 1170px;
+    /* Espaciado interno */
+    padding: 0 15px;
+    /* Espaciado externo */
+    margin: 0 auto;
+}
+
+.container-full {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.column {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin-left: -1px;
+    margin-right: -1px;
+    vertical-align: top;
+}
+
+.column-100 {
+    width: 100%;
+}
+
+.column-50 {
+    width: 50%;
+}
+
+.column-33 {
+    width: 33.33%;
+}
+
+.column-25 {
+    width: 25%;
+}
+
+.seccion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.justificar-texto {
+    text-align: justify;
+}
+
+.importante {
+    font-style: italic;
+}
+
+.banner-home {
+    /* Se define que ocupe el 100% de la pantalla que esté utilizando */
+    width: 100%;
+    /* Se define que tome el alto automático por defecto */
+    height: auto;
+    /* Se le indica que ocupe todo el bloque en la que está delimitada, se evita espaciados no deseados */
+    display: block;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn.boton-trasperencia {
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    border-radius: 15px;
+}
+
+
+/* Position
+
+    -static
+    ------------------
+    -relative
+    -absolute
+    -fixed
+        1 top
+        2 bottom
+        3 left
+        4 right
+        5 z-index
+*/
+
+#banner .container {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+
+#banner .container h1 {
+    font-size: 60px;
+    color: #000000;
+    margin: 0;
+}
+
+#banner .container p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#dishes {
+    /* background-image: url("../img/mx2.jpg");
+    background-attachment: fixed;
+    background-size: cover; */
+}

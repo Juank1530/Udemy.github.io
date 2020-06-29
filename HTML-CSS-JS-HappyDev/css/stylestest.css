@@ -1,0 +1,49 @@
+/* font
+
+    font-family: 'Arvo', serif;
+
+*/
+
+
+/* EL selector "*" marca a todo los objetos de la web */
+
+* {}
+
+
+/* Selector de clase se usa así ".nombre de la clase" y se aplicara a todos los elementos que tengan esa clase */
+
+.tittle {
+    /* Tamaño de la fuente  */
+    font-size: 20px;
+}
+
+
+/* Selector de id se usa así "#id del elemento" */
+
+#pagrapha {
+    font-size: 30px;
+}
+
+
+/* Acá se selecciono el body, este es un selector de nombre de etiqueta */
+
+body {
+    /* Esta propiedad controla la fuente de google fonts */
+    font-family: 'Arvo', serif;
+}
+
+
+/* En lo posiabel manener el orden de los selctores como está sobre esta línea 
+   tambien es posible mezclar el uso de los selectores */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* Tener en cuenta los prefijos para los diferentes navegadores usar https://autoprefixer.github.io/ */
+
+div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
