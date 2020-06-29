@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <!-- method="POST"=> No muestra los datos method="GET"=>Muestra los datos -->
+    <!-- enctype=> S usa para el envío de imagenes -->
+
+    <form id="frtest" action="registro.php" method="POST" enctype="multipart/form-data">
+
+        <!-- <input type="text" name="nombre" placeholder="Ingrese su nombre" size="" minlength="2" maxlength="20" required disabled readonly value="Juank"> -->
+
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" size="" minlength="2" maxlength="20" required autocomplete="off">
+
+        <input type="password" name="password" required autocomplete="off">
+        <input type="email" name="email" placeholder="Ingrese su Email" autocomplete="off">
+        <input type="hidden" name="uid">
+        <input type="date" name="date" min="2020-06-26" max="2020-06-30" value="yyyy-mm-dd" autocomplete="off">
+        <input type="month" name="month">
+        <input type="week" name="week">
+        <input type="color" value="#00ff00">
+        <input type="range" step="20">
+        <input type="file" name="image" accept=".jpg, .png, .pdf" multiple>
+        <input type="datetime-local" name="fecha-tiempo">
+        <input type="time" name="tiempo">
+        <input type="number" min="1" max="100">
+        <input type="reset" value="Cleanup">
+        <input type="url" name="link">
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <input type="radio" name="macota" checked value="DOG"><label>Dog</label>
+        <input type="radio" name="macota" value="DOG"><label>Cat</label><br>
+        <input type="checkbox" name="marca[]" checked value="audi"><label>Audi</label><br>
+        <input type="checkbox" name="marca[]" value="toyota"><label>Toyota</label><br>
+        <input type="checkbox" name="marca[]" value="mercedez"><label>Mercedez</label><br>
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <select name="list" id="list" required multiple>
+            <option value="">Selecione barrio</option>
+            <option value="1">Bosa</option>
+            <option value="2">Patio</option>
+            <option value="3">Kenedy</option>
+        </select>
+        <select name="list" id="list" required>
+            <option value="">Selecione barrio</option>
+            <option value="1">Bosa</option>
+            <option value="2">Patio</option>
+            <option value="3">Kenedy</option>
+        </select>
+        <select name="list" id="list" required multiple>
+            <option value="">Selecione barrio</option>
+            <optgroup label="localidad 7">
+                <option value="1">Bosa</option>
+                <option value="2">Patio</option>
+                <option value="3">Kenedy</option>
+            </optgroup>
+            <optgroup label="localidad 1">
+                <option value="1">cruicez</option>
+                <option value="2">lucero</option>
+                <option value="3">altos</option>
+            </optgroup>
+        </select>
+
+
+
+
+        <input type="submit" name="enviar" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
