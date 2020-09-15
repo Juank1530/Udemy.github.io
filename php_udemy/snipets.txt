@@ -250,8 +250,8 @@ ikappas.phpcs
 ms-python.python
 zhangciwu.swig-tpl
 vscode-icons-team.vscode-icons
-update 02/0420
+******Update 15-09-2020******
 shan.code-settings-sync
-update 30/04/20
+
 
 
