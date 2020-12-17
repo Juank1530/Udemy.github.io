@@ -229,29 +229,42 @@ update 02/04/20
 
 Plugins************************************************
 
-mcright.auto-save
-alefragnani.bookmarks
-wcwhitehead.bootstrap-3-snippets
-zaczero.bootstrap-v4-snippets
-coenraads.bracket-pair-colorizer
-msjsdiag.debugger-for-chrome
-abusaidm.html-snippets
-zignd.html-css-class-completion
-xabikos.javascriptsnippets
-lonefy.vscode-js-css-html-formatter
-ritwickdey.liveserver
-angelgonzalez.loremzombie
-jmrog.vscode-nuget-package-manager
-felixfbecker.php-debug
-bmewburn.vscode-intelephense-client
-felixfbecker.php-intellisense
-hvyindustries.crane
-ikappas.phpcs
-ms-python.python
-zhangciwu.swig-tpl
-vscode-icons-team.vscode-icons
-******Update 15-09-2020******
+******Update 17-12-2020******
 shan.code-settings-sync
+
+abusaidm.html-snippets
+alefragnani.Bookmarks
+almenon.arepl
+angelgonzalez.loremzombie
+batisteo.vscode-django
+bmewburn.vscode-intelephense-client
+CoenraadS.bracket-pair-colorizer
+dongli.python-preview
+donjayamanne.python-extension-pack
+felixfbecker.php-debug
+felixfbecker.php-intellisense
+firefox-devtools.vscode-firefox-debug
+formulahendry.code-runner
+ikappas.phpcs
+jmrog.vscode-nuget-package-manager
+KevinRose.vsc-python-indent
+lonefy.vscode-JS-CSS-HTML-formatter
+magicstack.MagicPython
+mcright.auto-save
+ms-python.python
+ms-toolsai.jupyter
+msjsdiag.debugger-for-chrome
+ritwickdey.LiveServer
+tht13.python
+tushortz.python-extended-snippets
+VisualStudioExptTeam.vscodeintellicode
+vscode-icons-team.vscode-icons
+wcwhitehead.bootstrap-3-snippets
+wholroyd.jinja
+xabikos.JavaScriptSnippets
+Zaczero.bootstrap-v4-snippets
+zhangciwu.swig-tpl
+Zignd.html-css-class-completion
 
 
 
